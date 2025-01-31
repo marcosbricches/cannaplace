@@ -6,6 +6,125 @@ export default function HomePage() {
  return (
    <div className="min-h-screen p-8">
      <div className="max-w-[1200px] mx-auto space-y-8">
+     <Card>
+      <CardContent className="p-6">
+        <div className="space-y-6">
+          <div className="space-y-1">
+            <h2 className="text-xl font-semibold">Catálogo e Produtos</h2>
+            <p className="text-sm text-muted-foreground">
+              Gerenciamento completo de marcas, categorias, produtos e promoções
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link 
+              href="/catalog/brands" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Cadastro de Marcas</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Gerenciamento de marcas parceiras e suas informações
+              </p>
+            </Link>
+
+            <Link 
+              href="/catalog/categories" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Categorias e Subcategorias</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Organização hierárquica de produtos no catálogo
+              </p>
+            </Link>
+
+            <Link 
+              href="/catalog/products" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Produtos</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Gerenciamento do catálogo de produtos e variações
+              </p>
+            </Link>
+
+            <Link 
+              href="/catalog/promotions" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Campanhas e Promoções</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Gestão de campanhas promocionais e descontos
+              </p>
+            </Link>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+     <Card>
+      <CardContent className="p-6">
+        <div className="space-y-6">
+          <div className="space-y-1">
+            <h2 className="text-xl font-semibold">Gestão de Pessoas</h2>
+            <p className="text-sm text-muted-foreground">
+              Gerenciamento completo de turmas, equipes e comissões
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link 
+              href="/people-management/teams" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Turmas de Consultores</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Gerenciamento de turmas para análise de KPIs de vendas
+              </p>
+            </Link>
+
+            <Link 
+              href="/people-management/consultant-groups" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Equipes de Consultores</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Organização de consultores em equipes com gestores
+              </p>
+            </Link>
+
+            <Link 
+              href="/people-management/commissions" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Comissões</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Configuração de comissões para consultores e assessorias
+              </p>
+            </Link>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
        <Card>
          <CardContent className="p-6">
            <div className="space-y-6">
