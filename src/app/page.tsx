@@ -7,6 +7,204 @@ export default function HomePage() {
    <div className="min-h-screen p-8">
      <div className="max-w-[1200px] mx-auto space-y-8">
      <Card>
+        <CardContent className="p-6">
+          <div className="space-y-6">
+            <div className="space-y-1">
+              <h2 className="text-xl font-semibold">Financeiro</h2>
+              <p className="text-sm text-muted-foreground">
+                Gerenciamento completo do sistema financeiro
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link 
+                href="/financial" 
+                className="group p-4 rounded-lg border hover:border-primary transition-colors"
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <h3 className="font-medium">Dashboard Financeiro</h3>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Visão geral de todas as operações financeiras
+                </p>
+              </Link>
+
+              <Link 
+                href="/financial/commissions" 
+                className="group p-4 rounded-lg border hover:border-primary transition-colors"
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <h3 className="font-medium">Comissões</h3>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Gestão de comissões de consultores e assessorias
+                </p>
+              </Link>
+
+              <Link 
+                href="/financial/accounts" 
+                className="group p-4 rounded-lg border hover:border-primary transition-colors"
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <h3 className="font-medium">Contas</h3>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Controle de contas a pagar e receber
+                </p>
+              </Link>
+
+              <Link 
+                href="/financial/invoices" 
+                className="group p-4 rounded-lg border hover:border-primary transition-colors"
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <h3 className="font-medium">Notas Fiscais</h3>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Emissão e controle de notas fiscais
+                </p>
+              </Link>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+     <Card>
+  <CardContent className="p-6">
+    <div className="space-y-6">
+      <div className="space-y-1">
+        <h2 className="text-xl font-semibold">Logística e Estoque</h2>
+        <p className="text-sm text-muted-foreground">
+          Gerenciamento de estoque, empresas logísticas e integrações com transportadoras
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-4">
+        <Link 
+          href="/logistics" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">Gestão de Estoque</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Controle de entrada e saída de produtos, lotes e validades
+          </p>
+        </Link>
+
+        <Link 
+          href="/logistics" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">Empresas Logísticas</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Cadastro e gestão de transportadoras e serviços logísticos
+          </p>
+        </Link>
+
+        <Link 
+          href="/logistics/settings/courier" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">Courier (Principal)</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Configuração e monitoramento da integração Courier
+          </p>
+        </Link>
+
+        <Link 
+          href="/logistics/settings/ups" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">UPS (Secundário)</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Configuração de backup e failover com UPS
+          </p>
+        </Link>
+      </div>
+    </div>
+  </CardContent>
+  </Card>
+     <Card>
+      <CardContent className="p-6">
+        <div className="space-y-6">
+          <div className="space-y-1">
+            <h2 className="text-xl font-semibold">Pedidos e Orçamentos</h2>
+            <p className="text-sm text-muted-foreground">
+              Gestão completa de pedidos, orçamentos e todo o fluxo de vendas
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link 
+              href="/orders" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Gestão de Pedidos</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Acompanhamento e gerenciamento de todo ciclo do pedido
+              </p>
+            </Link>
+
+            <Link 
+              href="/orders/quotations" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Orçamentos</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Controle de orçamentos e propostas comerciais
+              </p>
+            </Link>
+
+            <Link 
+              href="/orders/documentation" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Validação de Documentos</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Gestão de receitas médicas e documentações necessárias
+              </p>
+            </Link>
+
+            <Link 
+              href="/orders/logistics" 
+              className="group p-4 rounded-lg border hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="font-medium">Logística e Entrega</h3>
+                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Acompanhamento de transportadoras e status de entregas
+              </p>
+            </Link>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+     <Card>
       <CardContent className="p-6">
         <div className="space-y-6">
           <div className="space-y-1">
