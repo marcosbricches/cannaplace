@@ -7,12 +7,16 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ArrowLeft, Save } from "lucide-react"
 
-export default function EditCompanyPage({ params }: { params: { id: string } }) {
+interface Params {
+  id: string;
+}
+
+export default function EditCompanyPage({ params }: { params: Params }) {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-3xl mx-auto p-8">
         <div className="mb-8">
-          <Link href={`/logistics/companies/${params.id}`} className="text-gray-500 flex items-center gap-2 mb-4">
+          <Link href={`/logistics/companies/123}`} className="text-gray-500 flex items-center gap-2 mb-4">
             <ArrowLeft size={16} />
             Voltar
           </Link>
@@ -174,7 +178,7 @@ export default function EditCompanyPage({ params }: { params: { id: string } }) 
 
               <div className="flex justify-end gap-4 pt-6">
                 <Button variant="outline" asChild>
-                  <Link href={`/logistics/companies/${params.id}`}>Cancelar</Link>
+                  <Link href={`/logistics/companies/123}`}>Cancelar</Link>
                 </Button>
                 <Button type="submit" className="flex items-center gap-2">
                   <Save size={16} />
