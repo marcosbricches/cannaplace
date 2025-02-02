@@ -138,72 +138,46 @@ export default function HomePage() {
           </div>
         </CardContent>
       </Card>
-     <Card>
-  <CardContent className="p-6">
-    <div className="space-y-6">
-      <div className="space-y-1">
-        <h2 className="text-xl font-semibold">Logística e Estoque</h2>
-        <p className="text-sm text-muted-foreground">
-          Gerenciamento de estoque, empresas logísticas e integrações com transportadoras
-        </p>
-      </div>
+      <Card>
+       <CardContent className="p-6">
+         <div className="space-y-6">
+           <div className="space-y-1">
+             <h2 className="text-xl font-semibold">Logística e Estoque</h2>
+             <p className="text-sm text-muted-foreground">
+               Gerenciamento completo de empresas logísticas e controle de estoque
+             </p>
+           </div>
 
-      <div className="grid md:grid-cols-2 gap-4">
-        <Link 
-          href="/logistics" 
-          className="group p-4 rounded-lg border hover:border-primary transition-colors"
-        >
-          <div className="flex items-center justify-between mb-1">
-            <h3 className="font-medium">Gestão de Estoque</h3>
-            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Controle de entrada e saída de produtos, lotes e validades
-          </p>
-        </Link>
+           <div className="grid md:grid-cols-2 gap-4">
+             <Link 
+               href="/supply-chain/logistics" 
+               className="group p-4 rounded-lg border hover:border-primary transition-colors"
+             >
+               <div className="flex items-center justify-between mb-1">
+                 <h3 className="font-medium">Cadastro de Logística</h3>
+                 <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+               </div>
+               <p className="text-sm text-muted-foreground">
+                 Gerenciamento de empresas logísticas e transportadoras
+               </p>
+             </Link>
 
-        <Link 
-          href="/logistics" 
-          className="group p-4 rounded-lg border hover:border-primary transition-colors"
-        >
-          <div className="flex items-center justify-between mb-1">
-            <h3 className="font-medium">Empresas Logísticas</h3>
-            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Cadastro e gestão de transportadoras e serviços logísticos
-          </p>
-        </Link>
-
-        <Link 
-          href="/logistics/settings/courier" 
-          className="group p-4 rounded-lg border hover:border-primary transition-colors"
-        >
-          <div className="flex items-center justify-between mb-1">
-            <h3 className="font-medium">Courier (Principal)</h3>
-            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Configuração e monitoramento da integração Courier
-          </p>
-        </Link>
-
-        <Link 
-          href="/logistics/settings/ups" 
-          className="group p-4 rounded-lg border hover:border-primary transition-colors"
-        >
-          <div className="flex items-center justify-between mb-1">
-            <h3 className="font-medium">UPS (Secundário)</h3>
-            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Configuração de backup e failover com UPS
-          </p>
-        </Link>
-      </div>
-    </div>
-  </CardContent>
-  </Card>
+             <Link 
+               href="/supply-chain/inventory" 
+               className="group p-4 rounded-lg border hover:border-primary transition-colors"
+             >
+               <div className="flex items-center justify-between mb-1">
+                 <h3 className="font-medium">Gestão de Estoque</h3>
+                 <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+               </div>
+               <p className="text-sm text-muted-foreground">
+                 Controle de entrada e saída de produtos no estoque
+               </p>
+             </Link>
+           </div>
+         </div>
+       </CardContent>
+     </Card>
      <Card>
       <CardContent className="p-6">
         <div className="space-y-6">
