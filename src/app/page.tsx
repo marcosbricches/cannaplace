@@ -7,6 +7,72 @@ export default function HomePage() {
    <div className="min-h-screen p-8">
      <div className="max-w-[1200px] mx-auto space-y-8">
      <Card>
+ <CardContent className="p-6">
+   <div className="space-y-6">
+     <div className="space-y-1">
+       <h2 className="text-xl font-semibold">Comunicação e Notificações</h2>
+       <p className="text-sm text-muted-foreground">
+         Gerenciamento completo de atendimentos, alertas e configurações de comunicação
+       </p>
+     </div>
+
+     <div className="grid md:grid-cols-2 gap-4">
+       <Link 
+         href="/communication/services" 
+         className="group p-4 rounded-lg border hover:border-primary transition-colors"
+       >
+         <div className="flex items-center justify-between mb-1">
+           <h3 className="font-medium">Atendimentos</h3>
+           <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+         </div>
+         <p className="text-sm text-muted-foreground">
+           Gestão de atendimentos, SAC e acompanhamento de solicitações
+         </p>
+       </Link>
+
+       <Link 
+         href="/communication/alerts" 
+         className="group p-4 rounded-lg border hover:border-primary transition-colors"
+       >
+         <div className="flex items-center justify-between mb-1">
+           <h3 className="font-medium">Alertas</h3>
+           <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+         </div>
+         <p className="text-sm text-muted-foreground">
+           Configure e gerencie alertas automáticos do sistema
+         </p>
+       </Link>
+
+       <Link 
+         href="/communication/settings" 
+         className="group p-4 rounded-lg border hover:border-primary transition-colors"
+       >
+         <div className="flex items-center justify-between mb-1">
+           <h3 className="font-medium">Configurações</h3>
+           <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+         </div>
+         <p className="text-sm text-muted-foreground">
+           Configuração de WhatsApp, e-mail e templates de mensagem
+         </p>
+       </Link>
+
+       <Link 
+         href="/communication/settings/templates/1" 
+         className="group p-4 rounded-lg border hover:border-primary transition-colors"
+       >
+         <div className="flex items-center justify-between mb-1">
+           <h3 className="font-medium">Templates</h3>
+           <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+         </div>
+         <p className="text-sm text-muted-foreground">
+           Gerenciamento de modelos de mensagens para WhatsApp e e-mail
+         </p>
+       </Link>
+     </div>
+   </div>
+ </CardContent>
+</Card>
+     <Card>
         <CardContent className="p-6">
           <div className="space-y-6">
             <div className="space-y-1">
