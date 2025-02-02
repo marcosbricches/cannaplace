@@ -7,14 +7,8 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 
-type PageParams = {
-  params: {
-    id: string
-  }
-}
-
-export default function LogisticsEdit({ params }: PageParams) {
-  return (
+export default function LogisticsEdit({ params }: any) {
+    return (
     <div className="container mx-auto py-8 max-w-5xl">
       <div className="flex justify-between items-center mb-8">
         <div>

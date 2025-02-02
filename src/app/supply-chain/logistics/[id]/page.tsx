@@ -4,15 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
-type PageParams = {
-  params: {
-    id: string
-  }
-}
-
-export default function LogisticsView({ params }: PageParams) {
-  return (
-    <div className="container mx-auto py-8 max-w-5xl">
+export default function LogisticsView({ params }: any) {
+    return (
+        <div className="container mx-auto py-8 max-w-5xl">
       <div className="flex justify-between items-center mb-8">
         <div>
           <h1 className="text-3xl font-bold">Detalhes da Empresa Logística</h1>
@@ -155,6 +149,6 @@ export default function LogisticsView({ params }: PageParams) {
           </CardContent>
         </Card>
       </div>
-    </div>
-  )
+        </div>
+    )
 }
