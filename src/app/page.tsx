@@ -7,6 +7,72 @@ export default function HomePage() {
    <div className="min-h-screen p-8">
      <div className="max-w-[1200px] mx-auto space-y-8">
      <Card>
+  <CardContent className="p-6">
+    <div className="space-y-6">
+      <div className="space-y-1">
+        <h2 className="text-xl font-semibold">Dashboard Comercial</h2>
+        <p className="text-sm text-muted-foreground">
+          Gestão completa de equipes, prescritores, turmas e indicadores de vendas
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-4">
+        <Link 
+          href="/dashboard/teams" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">Gestão de Equipes</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Acompanhamento e gestão das equipes comerciais e consultores
+          </p>
+        </Link>
+
+        <Link 
+          href="/dashboard/prescribers" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">Prescritores</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Gerenciamento de profissionais prescritores e suas métricas
+          </p>
+        </Link>
+
+        <Link 
+          href="/dashboard/classes" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">Turmas e Treinamentos</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Controle de turmas, cronogramas e desempenho dos consultores
+          </p>
+        </Link>
+
+        <Link 
+          href="/dashboard/conversion" 
+          className="group p-4 rounded-lg border hover:border-primary transition-colors"
+        >
+          <div className="flex items-center justify-between mb-1">
+            <h3 className="font-medium">Funil de Conversão</h3>
+            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Análise do funil de vendas e taxas de conversão
+          </p>
+        </Link>
+      </div>
+    </div>
+  </CardContent>
+</Card>
+     <Card>
  <CardContent className="p-6">
    <div className="space-y-6">
      <div className="space-y-1">
